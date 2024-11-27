@@ -74,7 +74,7 @@
 
                     const weatherCon = data.weather[0].main;
 
-                    document.querySelector(".weather-icon").src = weatherCon + ".png";
+                    document.querySelector(".weather-icon").src = weatherCon.toLowerCase() + ".png";
                     document.querySelector(".error").style.display = "none";
                     document.querySelector(".weather").style.display = "block";
                 }
